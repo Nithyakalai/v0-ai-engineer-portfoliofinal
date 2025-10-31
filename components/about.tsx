@@ -27,13 +27,13 @@ export default function About() {
           </div>
 
           <div className="space-y-6 animate-slide-in-up" style={{ animationDelay: "0.2s" }}>
-            <div className="bg-card/50 p-6 rounded-xl border border-border hover:border-primary transition-colors duration-300">
+            <div className="about-card-hover p-6 rounded-xl border border-border">
               <h3 className="text-xl font-semibold mb-3 text-primary">Education</h3>
               <p className="text-foreground/70">Bachelor's in Computer Science and Engineering (AI Specialization)</p>
               <p className="text-sm text-foreground/50">VIT Chennai — Ongoing</p>
             </div>
 
-            <div className="bg-card/50 p-6 rounded-xl border border-border hover:border-primary transition-colors duration-300">
+            <div className="about-card-hover p-6 rounded-xl border border-border">
               <h3 className="text-xl font-semibold mb-3 text-primary">Experience</h3>
               <p className="text-foreground/70">
                 Hands-on learning through internships, research projects, and academic initiatives in AI/ML

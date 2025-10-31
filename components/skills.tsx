@@ -34,7 +34,7 @@ export default function Skills() {
           {skillCategories.map((cat, idx) => (
             <div
               key={cat.category}
-              className="bg-card/50 border border-border rounded-xl p-8 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-slide-in-up group"
+              className="skill-box-hover border rounded-xl p-8 animate-slide-in-up group"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <h3 className="text-xl font-semibold mb-6 text-primary group-hover:text-accent transition-colors">
@@ -44,7 +44,7 @@ export default function Skills() {
                 {cat.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium hover:bg-primary/40 transition-all duration-300 cursor-default hover:scale-105"
+                    className="skill-tag-enhanced px-4 py-2 text-primary rounded-full text-sm font-medium cursor-default"
                   >
                     {skill}
                   </span>

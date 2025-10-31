@@ -45,7 +45,7 @@ export default function Contact() {
                 id="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300"
+                className="form-input-enhanced w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                 placeholder="Your name"
               />
             </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                 id="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300"
+                className="form-input-enhanced w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                 placeholder="your@email.com"
               />
             </div>
@@ -73,14 +73,14 @@ export default function Contact() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={5}
-                className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 resize-none"
+                className="form-input-enhanced w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none"
                 placeholder="Your message..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group"
+              className="button-glow-hover w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group"
             >
               Send Message
               <Send size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -89,7 +89,7 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="space-y-8 animate-slide-in-up" style={{ animationDelay: "0.1s" }}>
-            <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary transition-colors duration-300 group cursor-pointer">
+            <div className="contact-card-hover rounded-xl p-6 border border-border group cursor-pointer">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/40 transition-all duration-300 mt-1">
                   <Mail size={24} className="text-primary" />
@@ -106,7 +106,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary transition-colors duration-300 group cursor-pointer">
+            <div className="contact-card-hover rounded-xl p-6 border border-border group cursor-pointer">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/40 transition-all duration-300 mt-1">
                   <Phone size={24} className="text-primary" />
@@ -120,7 +120,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary transition-colors duration-300 group cursor-pointer">
+            <div className="contact-card-hover rounded-xl p-6 border border-border group cursor-pointer">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/40 transition-all duration-300 mt-1">
                   <Linkedin size={24} className="text-primary" />
@@ -139,7 +139,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary transition-colors duration-300 group cursor-pointer">
+            <div className="contact-card-hover rounded-xl p-6 border border-border group cursor-pointer">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/40 transition-all duration-300 mt-1">
                   <Github size={24} className="text-primary" />
